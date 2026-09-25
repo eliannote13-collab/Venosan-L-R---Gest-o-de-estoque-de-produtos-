@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #b70011;
+  --color-primary-container: #dc2626;
+  --color-primary-fixed: #ffdad6;
+  --color-on-primary: #ffffff;
+  --color-on-primary-fixed: #410002;
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #5c403c;
+  --color-secondary: #565e74;
+  --color-secondary-container: #dae2fd;
+  --color-on-secondary-fixed-variant: #3f465c;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-background: #f8f9ff;
+  --color-on-background: #0b1c30;
+
+  --spacing-gutter: 0.75rem;
+  --spacing-gutter-desktop: 1rem;
+  --spacing-space-2xs: 0.125rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 0.75rem;
+  --spacing-space-lg: 1rem;
+  --spacing-space-xl: 1.5rem;
+  --spacing-space-2xl: 2rem;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+  }
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: 'liga';
+  }
+}
+
+/* Custom Typography classes as defined in Design System */
+.font-headline-lg {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.text-headline-lg {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+}
+
+.font-headline-md {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+.text-headline-md {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+}
+
+.font-metric-display {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.text-metric-display {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+}
+
+.font-body-md {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.005em;
+  font-weight: 400;
+}
+
+.text-body-md {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.005em;
+}
+
+.font-body-sm {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0em;
+  font-weight: 400;
+}
+
+.text-body-sm {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0em;
+}
+
+.font-label-md {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+.text-label-md {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.font-label-sm {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.text-label-sm {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+}
+
+.font-table-header {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.text-table-header {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+}
+
+.font-data-tabular {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-data-tabular-bold {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+

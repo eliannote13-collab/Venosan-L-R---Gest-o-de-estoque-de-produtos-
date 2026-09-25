@@ -1,0 +1,6 @@
+{
+  "name": "VENOSAN L&H - Estoque & Fluxo de Saídas",
+  "description": "Dashboard analítico para gestão de estoque e fluxo de saídas: comodatos, demonstrações, locações e rastreamento de devoluções.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
